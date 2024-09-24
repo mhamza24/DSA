@@ -1,3 +1,5 @@
+package RandomQuestions;
+
 import java.util.Scanner;
 
 public class Fibonachi {

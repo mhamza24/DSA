@@ -1,3 +1,5 @@
+package RandomQuestions;
+
 import java.util.ArrayList;
 
 public class ArraysList

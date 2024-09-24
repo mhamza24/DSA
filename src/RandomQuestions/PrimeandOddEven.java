@@ -1,3 +1,5 @@
+package RandomQuestions;
+
 public class PrimeandOddEven {
     public static void main(String[] args) {
         int x=36;
