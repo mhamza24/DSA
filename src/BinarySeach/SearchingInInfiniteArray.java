@@ -27,14 +27,6 @@ static  int findingSubArray(int[] arr,int target){
 }
 
 
-
-
-
-
-
-
-
-
     static int binarySearch(int[] arr,int target,int left,int right){
 
         int mid=0;
