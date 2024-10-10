@@ -12,6 +12,25 @@ public class Solution
        // System.out.println(ans);
 
     }
+
+    public int peakIndexInMountainArray(int[] nums) {
+        int start=0,end=nums.length-1;
+        while (start<end)
+        {
+            int mid=start+(end-start)/2;
+            if(nums[mid+1]>nums[mid])
+            {
+                start=mid+1;
+            }
+            else if(nums[mid+1]<nums[mid])
+            {
+                end=mid;
+            }
+
+        }
+        return end;
+    }
+
     static public int binarySearch(int[] arr,int target,int start,int end)
     {
         while (start<end)

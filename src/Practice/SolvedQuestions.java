@@ -6,6 +6,8 @@ public enum SolvedQuestions {
     FindSmallestLetterGreaterThanTarget_744,
     FindFirstAndLastPositionOfElementInSortedArray_34,
     SearchingInInfiniteArray,
-    FindPeakElement_162
+    FindPeakElement_162,
+    PeakIndexInAMountainArray_852
+
 
 }
