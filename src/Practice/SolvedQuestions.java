@@ -7,7 +7,9 @@ public enum SolvedQuestions {
     FindFirstAndLastPositionOfElementInSortedArray_34,
     SearchingInInfiniteArray,
     FindPeakElement_162,
-    PeakIndexInAMountainArray_852
+    PeakIndexInAMountainArray_852,
+     FindInMountainArray_1095
+
 
 
 }
