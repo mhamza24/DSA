@@ -1,9 +1,9 @@
 package BinarySeach;
-
+//status=1
 public class SmallestGreater {
     public static void main(String[] args) {
     char[] letters={'c','f','j'};
-    char res=nextGreaterLetter(letters,'j');
+    char res=nextGreatestLetter(letters,'j');
         System.out.println(res);
     }
 
@@ -32,7 +32,31 @@ public class SmallestGreater {
                 left=mid+1;
             }
         }
-        return letters[left%letters.length];
+        return letters[left];
     }
 
+
+    static public char nextGreatestLetter(char[] letters, char target) {
+        // Upper Bound Problem letters[i] > target
+        int n = letters.length;
+        int left = 0;
+        int right = n-1;
+
+        if(target >= letters[right])    return letters[left];
+
+        while(left <= right) {
+            int mid = (left + right)/2;
+
+            if(letters[mid] > target) right = mid-1;
+            else left = mid+1;
+        }
+
+        return letters[left];
+    }
+
+
 }
+
+
+
+

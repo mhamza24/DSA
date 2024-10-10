@@ -1,5 +1,5 @@
 package BinarySeach;
-
+//status=1
 public class CeilingAndFlooringOfANumber
 {
     public static void main(String[] args) {

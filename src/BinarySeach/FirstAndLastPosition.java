@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 
 //FACEBOOK
+//status=1
 public class FirstAndLastPosition
 {
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class FirstAndLastPosition
         while (left<=right)
         {
             mid = left +(right-left)/2;
-
+            System.out.println(mid+" "+left+" "+right);
             if(arr[mid]==target)
             {
                 ans=mid;
