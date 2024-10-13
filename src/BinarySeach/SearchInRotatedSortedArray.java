@@ -1,6 +1,6 @@
 package BinarySeach;
 
-//status=0;
+//status=1;
 //Amazon,Google
 
 //https://chatgpt.com/share/66f2d5af-d9d8-8003-9ccf-7065cd67eafb

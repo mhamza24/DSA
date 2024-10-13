@@ -1,4 +1,5 @@
 package BinarySeach;
+//status=0
 //Google
 public class SplitArrayLargestSum {
     public static void main(String[] args) {
