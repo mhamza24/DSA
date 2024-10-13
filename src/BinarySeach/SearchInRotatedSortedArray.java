@@ -1,7 +1,7 @@
 package BinarySeach;
 
 //status=0;
-//facebook,Google
+//Amazon,Google
 
 //https://chatgpt.com/share/66f2d5af-d9d8-8003-9ccf-7065cd67eafb
 public class SearchInRotatedSortedArray
@@ -10,8 +10,8 @@ public class SearchInRotatedSortedArray
 //    int[] arr={4,5,6,7,0,1,2};
 
         //int[] arr={3,4,5,6,7,0,1,2};
-        int[] arr={4,5,6,7,0,1,2};
-        System.out.println(Search(arr,0));
+        int[] arr={3,1};
+        System.out.println(Search(arr,1));
 
 
 
@@ -43,41 +43,24 @@ public class SearchInRotatedSortedArray
 
 
     static public int binarySearch(int[] arr,int target,int start,int end){
-        boolean isAscending =arr[start]<arr[end];
-        int mid=0;
+
+
         while (start<=end)
         {
-            mid=start+(end-start)/2;
+            int mid=start+(end-start)/2;
+            System.out.println(mid);
             if (arr[mid]==target)
             {
                 return mid;
             }
-
-            if(isAscending)
+            if(arr[mid]>target)
             {
-                if(arr[mid]>target)
-                {
-                    end=mid-1;
-
-                }
-                else
-                {
-                    start=mid+1;
-                }
+                end=mid-1;
             }
-            else {
-
-                if(arr[mid]>target)
-                {
-                    start=mid+1;
-
-                }
-                else
-                {
-                    end=mid-1;
-                }
+            else if(arr[mid]<target)
+            {
+                start=mid+1;
             }
-
         }
         return -1;
     }

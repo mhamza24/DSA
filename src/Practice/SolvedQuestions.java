@@ -8,7 +8,8 @@ public enum SolvedQuestions {
     SearchingInInfiniteArray,
     FindPeakElement_162,
     PeakIndexInAMountainArray_852,
-     FindInMountainArray_1095
+     FindInMountainArray_1095,
+    SearchInRotatedSortedArray_33,
 
 
 
