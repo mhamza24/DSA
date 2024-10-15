@@ -13,6 +13,8 @@ public enum SolvedQuestions {
     SplitArrayLargestSum_410,
     MissingNumber_268,
     FindAllNumbersDisappearedInAnArray_488,
+    FindTheDuplicateNumber_287,
+
 
 
 
