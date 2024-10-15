@@ -16,7 +16,7 @@ public class CycleSort
         int i=0;
         while ( i<arr.length)
         {
-            int correctIndex=arr[i]-1;
+            int correctIndex=arr[i]-1;//-1 is here becasue counting starts from 1  if from 0 then don use -1
 
             if(arr[i]!=arr[correctIndex]){
                 swapArrayValues(arr,i,correctIndex);
