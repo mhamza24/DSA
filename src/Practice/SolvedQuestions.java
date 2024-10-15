@@ -14,6 +14,7 @@ public enum SolvedQuestions {
     MissingNumber_268,
     FindAllNumbersDisappearedInAnArray_488,
     FindTheDuplicateNumber_287,
+    FindAllDuplicatesInAnArray_442,
 
 
 

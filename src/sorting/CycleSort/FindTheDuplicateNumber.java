@@ -1,7 +1,7 @@
 package sorting.CycleSort;
 
 import java.util.Arrays;
-//Google
+//Amazon,Microsoft
 public class FindTheDuplicateNumber
 {
     public static void main(String[] args) {
