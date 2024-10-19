@@ -18,8 +18,10 @@ public class InsertionSort
             {
                 if(arr[j]<arr[j-1])
                 {
-                    System.out.println(j+"  "+(j-1) +"  i:"+i);
+                    
                     swapArrayValues(arr,j,j-1);
+                    System.out.println(Arrays.toString(arr));
+                
                 }
                 else {
                     break;
