@@ -7,7 +7,7 @@ public class EvenOdd {
 
     public static void OddEven(int n) {
 
-        boolean isodd = (n & 1) == 1 ? true : false;
+        //boolean isodd = (n & 1) == 1 ? true : false;
         System.out.println((n & 1) == 1 ? true : false);
     }
 
