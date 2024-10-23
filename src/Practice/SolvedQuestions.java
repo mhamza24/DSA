@@ -17,7 +17,8 @@ public enum SolvedQuestions {
     FindAllDuplicatesInAnArray_442,
     SetMismatch_645,
     FirstMissingPositive_41,
-    FlippingAnImage_832
+    FlippingAnImage_832,
+    NumberOfStepsToReduceANumberToZero_1342
 
 
 

@@ -20,6 +20,8 @@ public class ReverseNumber {
         reverse1(n/10);
     }
 
+
+
     public  static  int  reverse2(int n)
     {
         int digits= (int) (Math.log10(n)+1);
