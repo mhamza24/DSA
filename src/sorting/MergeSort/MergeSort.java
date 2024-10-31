@@ -55,4 +55,68 @@ return merged;
 
     }
 
+
+    public static class InplaceMergeSort{
+        public static void main(String[] args) {
+            int[] arr={5,4,3,2,1};
+            mergeSort(arr,0, arr.length);
+            System.out.println(Arrays.toString(arr));
+        }
+
+
+        public static void  mergeSort(int[] arr,int start,int end)
+        {
+            if(end-start==1)
+            {
+                return;
+
+            }
+
+            int mid= start+(end-start)/2;
+            mergeSort(arr,start,mid);
+            mergeSort(arr,mid,end);
+            merging(arr,start,end,mid);
+
+        }
+
+        private static void merging(int[] arr, int start, int end, int mid) {
+            int[] merged=new  int[end-start];
+            int i=start,j=mid,k=0;
+
+            while (i<mid && j<end)
+            {
+                if(arr[i]<arr[j])
+                {
+                    merged[k++]=arr[i++];
+                }
+                else{
+                    merged[k++]=arr[j++];
+                }
+
+            }
+
+            while (i<mid)
+            {
+                merged[k++]=arr[i++];
+            }
+
+            while (j<end)
+            {
+                merged[k++]=arr[j++];
+            }
+            for (int l = 0; l < merged.length; l++) {
+                arr[start+l]=merged[l];
+            }
+
+
+        }
+
+
+
+
+
+
+
+    }
+
 }
